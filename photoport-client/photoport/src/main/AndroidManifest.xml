@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.despair.photoport.client" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity_"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProviderApiActivity_"
+            android:label="@string/title_activity_provider_api"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="photoport-oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccessCodeActivity_"
+            android:label="@string/title_activity_access_code" >
+        </activity>
+        <activity
+            android:name=".ReceiverApiActivity_"
+            android:label="@string/title_activity_reciver_api"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".AccessCodeChecker_"
+            android:label="@string/title_activity_access_code_checker">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.despair.photoport.client.ReceiverApiActivity_" />
+        </activity>
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+</manifest>

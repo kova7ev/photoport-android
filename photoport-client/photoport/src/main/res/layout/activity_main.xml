@@ -1,0 +1,20 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical|center_horizontal">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="PROVIDER"
+        android:id="@+id/providerButton" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="RECEIVER"
+        android:id="@+id/receiverButton"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

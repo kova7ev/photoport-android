@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photoport-client</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_flickr_api">FlickrApiActivity</string>
+    <string name="title_activity_provider_api">ProviderApiActivity</string>
+    <string name="title_activity_access_code">AccessCodeActivity</string>
+    <string name="title_activity_reciver_api">ReciverApiActivity</string>
+    <string name="title_activity_access_code_checker">AccessCodeChecker</string>
+
+</resources>
